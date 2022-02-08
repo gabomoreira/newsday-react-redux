@@ -16,7 +16,6 @@ const News = ({ title }) => {
   const { data: searchData, isFetching: loading } =
     useGetNewsSearchQuery(title);
   const newsData = title ? searchData?.value : data?.value;
-  console.log(data);
 
   const demoImage =
     "https://www.cwhaydenonline.com/media/wysiwyg/red_button_new_customer.png";
